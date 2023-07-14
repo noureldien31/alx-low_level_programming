@@ -3,11 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: Validate if the last number is greater than 5
- *		less than 6 and not 0 or is 0.
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Description: Validate if the last number is greater than 5
+*		less than 6 and not 0 or is 0
+*		
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int n, last;
