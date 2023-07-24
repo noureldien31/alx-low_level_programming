@@ -1,24 +1,19 @@
-#include "main.h"
+#include "mainn.h"
+
 /**
- * print_rev - Returns the length of a string.
- * @s: char pointer.
- * Return: length of a string.
+ * print_rev - This function prints a reverse string
+ *
+ * @s: This is the input string
  */
 void print_rev(char *s)
 {
-	int count;
+		int index;
 
-	while (*s != 0)
-	{
-		count++;
-		s++;
-	}
-	s--;
-	while (count - 1 >= 0)
-	{
-		_putchar(*s);
-		count--;
-		s--;
-	}
-	_putchar(10);
+		for (index = 0; s[index] != '\0'; index++)
+			;
+		for (index = index - 1; s[index] != '\0'; index--)
+		{
+			_putchar(s[index]);
+		}
+		_putchar('\n');
 }
